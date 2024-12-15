@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Warang Citi', sans-serif;
+}
+
+#whatsapp-button {
+    display: inline-block; 
+    background-color: #ff0000;
+    border: solid #ffffff;
+    color: white; 
+    padding: 30px 50px;
+    font-size: 18px; 
+    font-weight: bold;  
+    border-radius: 55px; 
+    text-decoration: none;  
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s, transform 0.3s; 
+    margin: 20px auto;
+    width: auto;
+    margin-top: 40px;
+}
+
+#whatsapp-button:hover {
+    background-color: #000000;  
+    transform: scale(1.05);  
+}
+
+#whatsapp-button:active {
+    transform: scale(0.98);  
+}
+
+#mapa {
+    display: block;            
+    margin: 0 auto;           
+    width: 250px;              
+    height: 250px;             
+    border-radius: 50%;        
+    object-fit: cover;        
+    margin-top: 30px;         
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+    border: 3px solid white;   
+}
+
+#horarios {
+    color: #ffffff;  
+    background-color: #031424;  
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin-top: 30px;  
+    text-align: center;  
+}
+
+#horarios h2 {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 15px;  
+}
+
+#horarios p {
+    font-size: 18px;
+    line-height: 1.6; 
+    margin: 5px 0; 
+}
+
+#horarios strong {
+    font-weight: bold;
+}
+
+#voltar {
+    position: fixed;
+    top: 10px; 
+    left: 10px; 
+    z-index: 1000;  
+}
+
+#voltar a {
+    display: inline-block; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    padding: 10px 20px; 
+    font-size: 16px;  
+    text-decoration: none;  
+    text-align: center;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s; 
+}
+
+#voltar a:hover {
+    background-color: #ff0000;
+}

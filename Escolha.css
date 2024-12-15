@@ -1,0 +1,237 @@
+* {
+    margin:0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Noto Sans Warang Citi', sans-serif;
+}
+
+html, body {
+    height: 100%; 
+    background: linear-gradient( #374756, #022349);
+    color: #ffffff;
+    overflow: hidden;
+}
+#carossel1 {
+    position: absolute;
+    top: 30px;  /* Posiciona o carrossel 150px do topo */
+    left: 50px;  /* Alinha o carrossel à esquerda */
+    right: 900px;
+    width: 300px;  /* Tamanho do carrossel */
+    max-width: 100%;  /* Para não ultrapassar a largura da tela */
+    margin: 0;  /* Remove qualquer margem */
+    overflow: hidden;
+}
+
+/* Responsável pela transição das imagens */
+.images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image {
+    min-width: 100%;  /* Cada imagem ocupa 100% da largura */
+    box-sizing: border-box;
+}
+
+/* Esconde os controles de rádio */
+#carossel1 input {
+    display: none;
+}
+
+/* Estilo para as imagens, deixando-as redondas */
+#carossel1 .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;  /* Faz as imagens redondas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#carossel1 .indicators {
+    display: flex;
+    justify-content: center; /* Centraliza os indicadores horizontalmente */
+    margin-top: 10px; /* Espaço entre as imagens e os indicadores */
+}
+/* Indicadores de navegação */
+#carossel1 .indicators label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Animações das imagens de acordo com o input selecionado */
+#carossel1 input:checked:nth-of-type(1) ~ .images {
+    transform: translateX(0%);
+}
+
+#carossel1 input:checked:nth-of-type(2) ~ .images {
+    transform: translateX(-100%);
+}
+
+#carossel1 input:checked:nth-of-type(3) ~ .images {
+    transform: translateX(-200%);
+}
+
+#carossel1 input:checked:nth-of-type(4) ~ .images {
+    transform: translateX(-300%);
+}
+
+/* Mudando a cor dos indicadores quando selecionados */
+#carossel1 input:checked:nth-of-type(1) ~ .indicators label:nth-of-type(1),
+#carossel1 input:checked:nth-of-type(2) ~ .indicators label:nth-of-type(2),
+#carossel1 input:checked:nth-of-type(3) ~ .indicators label:nth-of-type(3),
+#carossel1 input:checked:nth-of-type(4) ~ .indicators label:nth-of-type(4) {
+    background-color: #ff0000;
+}
+
+#carossel2 {
+    position: absolute;
+    top: 380px;  /* Posiciona o carrossel 150px do topo */
+    left: 50px;  /* Alinha o carrossel à esquerda */
+    right: 900px;
+    width: 300px;  /* Tamanho do carrossel */
+    max-width: 100%;  /* Para não ultrapassar a largura da tela */
+    margin: 0;  /* Remove qualquer margem */
+    overflow: hidden;
+}
+
+/* Responsável pela transição das imagens */
+.images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image {
+    min-width: 100%;  /* Cada imagem ocupa 100% da largura */
+    box-sizing: border-box;
+}
+
+/* Esconde os controles de rádio */
+#carossel2 input {
+    display: none;
+}
+
+/* Estilo para as imagens, deixando-as redondas */
+#carossel2 .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;  /* Faz as imagens redondas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#carossel2 .indicators {
+    display: flex;
+    justify-content: center; /* Centraliza os indicadores horizontalmente */
+    margin-top: 10px; /* Espaço entre as imagens e os indicadores */
+}
+/* Indicadores de navegação */
+#carossel2 .indicators label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Animações das imagens de acordo com o input selecionado */
+#carossel2 input:checked:nth-of-type(1) ~ .images {
+    transform: translateX(0%);
+}
+
+#carossel2 input:checked:nth-of-type(2) ~ .images {
+    transform: translateX(-100%);
+}
+
+#carossel2 input:checked:nth-of-type(3) ~ .images {
+    transform: translateX(-200%);
+}
+
+#carossel2 input:checked:nth-of-type(4) ~ .images {
+    transform: translateX(-300%);
+}
+
+/* Mudando a cor dos indicadores quando selecionados */
+#carossel2 input:checked:nth-of-type(1) ~ .indicators label:nth-of-type(1),
+#carossel2 input:checked:nth-of-type(2) ~ .indicators label:nth-of-type(2),
+#carossel2 input:checked:nth-of-type(3) ~ .indicators label:nth-of-type(3),
+#carossel2 input:checked:nth-of-type(4) ~ .indicators label:nth-of-type(4) {
+    background-color: #ff0000;
+}
+
+h1 {
+    position: absolute;
+    top: 80px;  /* Mantém a posição do topo */
+    left: 400px;  /* Aumente esse valor para mover mais para a direita */
+    right: 100px;  /* Pode manter o right se necessário */
+    margin: 0;
+    color: #ffffff;  /* Defina uma cor para o texto */
+    text-shadow: 8px 5px 15px rgba(0, 0, 0, 0.5);
+    font-size: 35px;
+}
+
+#textobarba {
+    position: absolute;
+    top: 125px;  /* Mantém a posição do topo */
+    left: 400px;  /* Aumente esse valor para mover mais para a direita */
+    right: 100px;  /* Pode manter o right se necessário */
+    margin: 0;
+    color: #ffffff;  /* Defina uma cor para o texto */
+    text-shadow: 8px 5px 15px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    text-align: justify;
+}
+
+h2 {
+    position: absolute;
+    top: 420px;  /* Mantém a posição do topo */
+    left: 400px;  /* Aumente esse valor para mover mais para a direita */
+    right: 100px;  /* Pode manter o right se necessário */
+    margin: 0;
+    color: #ffffff;  /* Defina uma cor para o texto */
+    text-shadow: 8px 5px 15px rgba(0, 0, 0, 0.5);
+    font-size: 35px;
+}
+
+#textocorte {
+    position: absolute;
+    top: 465px;  /* Mantém a posição do topo */
+    left: 400px;  /* Aumente esse valor para mover mais para a direita */
+    right: 100px;  /* Pode manter o right se necessário */
+    margin: 0;
+    color: #ffffff;  /* Defina uma cor para o texto */
+    text-shadow: 8px 5px 15px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    text-align: justify;
+}
+
+#voltar {
+    position: fixed;
+    top: 10px; 
+    right: 10px; 
+    z-index: 1000;  
+}
+
+#voltar a {
+    display: inline-block; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    padding: 10px 20px; 
+    font-size: 16px;  
+    text-decoration: none;  
+    text-align: center;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s; 
+}
+
+#voltar a:hover {
+    background-color:#ff0000;
+}
