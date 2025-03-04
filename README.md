@@ -31,10 +31,13 @@ Se você tiver dicas, sugestões ou feedback, ficarei muito grato! Estou focado 
 ![Cartão de visita](https://github.com/user-attachments/assets/69d1cc36-799a-47df-9804-9bb581507154)
 
 
+
 ![Página "Sobre nós"](https://github.com/user-attachments/assets/5ea60403-83e3-4b34-96a0-12e42a17e3ff)
 
 
+
 ![Agendar](https://github.com/user-attachments/assets/41d08879-b730-44a0-9e36-ef36bd27f8e6)
+
 
 
 ![Serviços](https://github.com/user-attachments/assets/540f2ae1-9675-49fb-8bc3-fbff4567440a)
